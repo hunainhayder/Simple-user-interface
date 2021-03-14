@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.con{
+    /*width and height as it is value are needed for animation to work*/
+    widows: 100%;
+    height: 85vh;
+    animation: animate 20s ease-in-out infinite;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+@keyframes animate{
+    /*0% is here to set the first image and then other % are for the shared time duration*/
+    0%,30%{
+        background-image: url("../../Desktop/web/4.webp");
+    }
+    50%{
+        background-image: url("../../Desktop/web/4.jpg");
+    }
+    100%{
+        background-image: url("../web/mensgift.jpeg")
+    }
+
+}
+*{
+    margin: 1px;
+    padding: 0px;
+    list-style: none;
+}
+.menu{
+    background-color: rgb(236, 70, 70);
+    text-align: left;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    margin: 3px;
+    padding: 15px;
+    width: 120px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li:hover{
+    background: rgba(231, 231, 229, 0.897);
+    border-radius: 0.5px;
+}
+.menu .fas{
+    margin-right: 15px;
+    color:rgb(255, 255, 255);
+}
+footer{
+    background-color: rgb(236, 70, 70);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.out{
+    width: 100%;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.5)
+}
+.det{
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.det h1{
+    font-size: 4rem;
+    color: white;
+}
+.det p{
+    color: white;
+    font-size: 2rem;
+}
